@@ -1,5 +1,7 @@
 # SimpleMessageBoard
 
+Very simple messageboard type webpage made with Angular 4 and Firebase database.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 ## Development server
