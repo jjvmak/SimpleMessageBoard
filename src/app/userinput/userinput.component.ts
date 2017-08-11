@@ -34,7 +34,7 @@ export class UserinputComponent implements OnInit {
 
   onClickSubmit(msg: string) {
     this.messageSerivice.onNewMessage(msg);
-    this.msgVal = '';
+    this.msgVal = ' ';
     this.messageSerivice.items.push({message: msg});
   }
 
