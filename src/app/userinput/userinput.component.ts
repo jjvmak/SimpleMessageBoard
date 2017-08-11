@@ -15,7 +15,7 @@ import * as firebase from 'firebase/app';
 })
 export class UserinputComponent implements OnInit {
 
-  msgVal = '';
+  msgVal = ' ';
   user: Observable<firebase.User>;
 
   constructor(private messageSerivice: MsgService, public afAuth: AngularFireAuth, public af: AngularFireDatabase) {
@@ -30,11 +30,12 @@ export class UserinputComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   onClickSubmit(msg: string) {
-    this.messageSerivice.onNewMessage(msg);
     this.msgVal = ' ';
+    this.messageSerivice.onNewMessage(msg);
     this.messageSerivice.items.push({message: msg});
   }
 
